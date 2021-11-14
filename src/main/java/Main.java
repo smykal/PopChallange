@@ -11,6 +11,8 @@ public class Main {
         eight.countParentheses("asdas()()()))))))))))))))))))))((");
 
         SummaryRecursion summaryRecursion = new SummaryOfNumbers();
-        LinkedList linkedList = summaryRecursion.generateList(10, 8, 80);
+        LinkedList linkedList = summaryRecursion.generateList(3, 1, 10);
+        summaryRecursion.printList(linkedList);
+        summaryRecursion.summaryList(linkedList);
     }
 }
