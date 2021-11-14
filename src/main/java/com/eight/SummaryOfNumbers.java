@@ -37,4 +37,18 @@ public class SummaryOfNumbers implements SummaryRecursion {
         return sum;
     }
 
+    @Override
+    public int summaryRecursionList(LinkedList linkedList, int size) {
+        if (size > 0) {
+            return (int) linkedList.get(size - 1) + summaryRecursionList(linkedList, size -1);
+        }
+        return 0;
+    }
+//    public int sumTable(int[] table, int n) {
+//        if(n > 0) {
+//            return table[n-1] + sumTable(table, n-1);
+//        } else {
+//            return 0;
+//        }
+//    }
 }

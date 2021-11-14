@@ -14,5 +14,9 @@ public class Main {
         LinkedList linkedList = summaryRecursion.generateList(3, 1, 10);
         summaryRecursion.printList(linkedList);
         summaryRecursion.summaryList(linkedList);
+        System.out.println("");
+        int i = summaryRecursion.summaryRecursionList(linkedList, 3);
+        System.out.println("Rekursja: " + i);
+
     }
 }
