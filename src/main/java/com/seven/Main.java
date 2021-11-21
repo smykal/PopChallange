@@ -10,8 +10,5 @@ public class Main {
         chars.printEachChosenChar(konstantynopol, 3);
         System.out.println("**********************");
         Summary summary = new Summary();
-        List list = summary.generateList(10);
-        double v = summary.summaryList(list);
-        System.out.println(v);
     }
 }

@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Summary implements SummaryMethods {
     @Override
-    public List generateList(int listSize) {
-        List list = new ArrayList(listSize);
+    public List<Double> generateList(int listSize) {
+        List<Double> list = new ArrayList<>(listSize);
         for (int i = 0; i < listSize; i++) {
             double random = Math.random();
             list.add(random);
