@@ -26,6 +26,20 @@ public class GetArray {
     }
 
     public void insertValuesToArray(int[][] array) {
-        
+        Scanner scanner = new Scanner(System.in);
+        int lengthN = array.length;
+        int lengthM = array[0].length;
+        for (int i = 0; i < array.length; i++) {
+            System.out.println();
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.println();
+                System.out.println("set value of " + i + " x " + j + " place");
+                int value = scanner.nextInt();
+                array[i][j] = value;
+                printArray(array);
+            }
+        }
     }
+
+
 }
