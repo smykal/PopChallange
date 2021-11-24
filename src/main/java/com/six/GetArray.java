@@ -27,8 +27,6 @@ public class GetArray {
 
     public void insertValuesToArray(int[][] array) {
         Scanner scanner = new Scanner(System.in);
-        int lengthN = array.length;
-        int lengthM = array[0].length;
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < array[i].length; j++) {
